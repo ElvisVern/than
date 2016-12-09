@@ -1,0 +1,31 @@
+{
+  "name": "Elvis",
+  "version": "1.0.0",
+  "description": "than's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony test",
+    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'"
+  },
+  "author": "than",
+  "license": "ISC",
+  "dependencies": {
+    "config-lite": "^1.5.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.14.2",
+    "express-winston": "^2.0.0",
+    "marked": "^0.3.6",
+    "mocha": "^3.2.0",
+    "moment": "^2.15.2",
+    "mongolass": "^2.3.2",
+    "objectid-to-timestamp": "^1.3.0",
+    "pm2": "^2.1.6",
+    "sha1": "^1.1.1",
+    "supertest": "^2.0.1",
+    "winston": "^2.3.0"
+  }
+}
