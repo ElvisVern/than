@@ -25,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(session({
     name: config.session.key,   //设置cookie中保存 session id 的字段名称
     secret: config.session.secret,  //设置 secret来计算hash值并放在cookie中， 使产生的signedCookie 防篡改
+    resave: true,
+    saveUninitialized: true,
     cookie: {
         maxAge: config.session.maxAge // 过期时间，过期后 cookie中的session id 自动删除
     },
